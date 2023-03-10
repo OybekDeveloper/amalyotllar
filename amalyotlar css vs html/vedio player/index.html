@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Vedio player</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>How to make a vedio gallery</h1>
+      <div class="row">
+        <div class="col">
+          <div class="feature">
+            <img src="./image/edsheeran.jpg" style="width:100%;" alt="foto" />
+            <img src="./image/play.png" class="play-btn" onclick="playBtn('./vedio/EdSheeran.mp4')">
+          </div>
+        </div>
+        <div class="col">
+            <div class="smallFeature">
+                <div class="smallImage">
+                    <img src="./image/imagine.jpg" alt="foto">
+                    <img src="./image/play.png" class="play-btn"onclick="playBtn('./vedio/Imagine.mp4')" >
+                </div>
+                <p>How to add multiplayer vedios in a website or to  make a vedio gallery</p>
+            </div>
+
+            <div class="smallFeature">
+                <div class="smallImage">
+                    <img src="./image/xcho.jpg" alt="foot">
+                    <img src="./image/play.png" class="play-btn" onclick="playBtn('./vedio/xcho.mp4')">
+                </div>
+                <p>How to add multiplayer vedios in a website or to  make a vedio gallery</p>
+            </div>
+
+            <div class="smallFeature">
+                <div class="smallImage">
+                    <img src="./image/rauffaik.jpg" alt="foto">
+                    <img src="./image/play.png" class="play-btn"onclick="playBtn('./vedio/RaufFaik.mp4')">
+                </div>
+                <p>How to add multiplayer vedios in a website or to  make a vedio gallery</p>
+            </div>
+
+
+        </div>
+        
+      </div>
+    </div>
+
+<div class="vedio-player" id="vedioPlayer">
+  <video width="100%" controls  autoplay id="myVedio">
+    <source src="./vedio/EdSheeran.mp4">
+  </video>
+  <img src="./image/close.png"  class="close-btn" onclick="stopVedio()">
+</div>
+
+<script>
+
+const vedioPlayer=document.querySelector('#vedioPlayer'),myVedio=document.querySelector('#myVedio')
+function stopVedio(){
+  vedioPlayer.style.display='none'
+}
+
+function playBtn(file){
+  myVedio.src=file
+  vedioPlayer.style.display='block'
+  
+}
+
+
+
+</script>
+
+
+  </body>
+</html>

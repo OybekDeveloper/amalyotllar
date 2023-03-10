@@ -1,0 +1,76 @@
+body{
+    padding: 0;
+    margin: 0 auto;
+    background-color: rgba(10, 1, 34, 0.904);
+}
+
+h1{
+    text-align: center;
+}
+
+form{
+    margin: 0 auto;
+    background-color: rgb(29, 26, 23);
+    width: 400px;
+    height: 500px;
+    border-radius: 16px;
+}
+
+table{
+    padding: 5px 5px;
+    width: 350px;
+    height: 450px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+.display{
+    font-size: 27px;
+    width: 100%;
+    height: 60%;
+    background-color: rgb(29, 26, 23);
+    box-shadow: none;
+    border-color: rgb(29, 26, 23);
+    border-style: none;
+}
+
+.operator1{
+    font-size: 20px;
+    border-style: none;
+    width :50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(72, 78, 78);    
+
+}
+
+.operator2{
+    font-size: 20px;
+    border-style: none;
+    width :50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(211, 127, 59);    
+}
+.operator3{
+    color:antiquewhite;
+    font-size: 20px;
+    border-style: none;
+    width :50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(44, 38, 32);    
+}
+
+.operator1:hover{
+    background-color: black;
+    color: rgb(72, 78, 78);
+}
+.operator2:hover{
+    background-color: black;
+    color:rgb(211, 127, 59) ;
+}
+.operator3:hover{
+    background-color: black;
+    color: rgb(126, 120, 115);
+}

@@ -1,0 +1,124 @@
+/*Navigation menu*/
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl{
+  justify-content: space-around;
+}
+.navbar-brand{
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .show>.nav-link,
+.navbar-nav.nav-link,
+.navbar-nav.navbar-brand
+
+{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+ }
+
+ .nav-link{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+ }
+
+ /*Text colors*/
+ .text-darc-custom{
+    color: #3a3a47!important;
+ }
+
+ .text-grey-custom{
+  color: #5c5c5c!important;
+ }
+
+ .text-light-grey-custom{
+  color: #818198!important;
+ }
+
+ .text-dark-blue-custom{
+  color: #383861!important;
+ }
+
+ .text-blue-custom{
+  color: #3498db!important;
+ }
+
+ .text-green-custom{
+  color: #21bf73!important;
+ }
+
+ /*Background color*/
+ .bg-primary-custom{
+  background-color: #f0f5f9!important;
+ }
+ /*Home*/
+ .home{
+  padding: 150px 0 100px 0;
+ }
+
+ .img{
+  border-radius: 10px;
+ }
+
+ /* About */
+ .about__card-1{
+   background-color: #fff2e5;
+ }
+
+ .about__card-2{
+  background-color: #f8f9fa;
+}
+
+.about__card-3{
+  background-color: #f0f5f9;
+}
+
+.about__card-image {
+  max-width: 540px
+}
+
+/*Features */
+features__container{
+  background-color: #f0f5f9;
+}
+
+/*Results*/
+.result__card-image{
+  width: 80px;
+}
+.results{
+  background-color: #f0f5f9;
+}
+
+/*Carousel*/
+.reviews__container{
+padding: 100px 50px;
+background-color:#f0f5f9 ;
+}
+
+.Carusel__item-image{
+  border-radius:50%;
+  width: 60px;
+}
+
+/*Pracing*/
+.pricing__card-item{
+  background-color: #f0f5f9;
+}
+
+/*FAQ*/
+.faq__container{
+  padding: 100px 50px;
+  background-color:#f0f5f9 ;
+}
+
+/*footer*/
+.text-success{
+  font-family: 'Montserrat';
+  font-weight: 500;
+  font-size: 16px;
+  padding: 5px 10px;
+}

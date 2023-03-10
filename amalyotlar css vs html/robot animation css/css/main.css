@@ -1,0 +1,258 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: lightblue;
+}
+h2{
+    text-align: center;
+    margin-top: 100px;
+}
+.title h5{
+    font-size: 20px;
+}
+.title{
+    margin: auto;
+    padding-top: 130px;
+    padding-left: 650px;
+   
+}
+
+.face{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    bottom: 150px;
+    width: 65px;
+    height: 40px;
+    background: black;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .3s;
+}
+
+.head{
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin:auto;
+    bottom: 150px;
+    width: 100px;
+    height: 75px;
+    z-index: -1;
+    background: white;
+    border-top-left-radius: 60px;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: .3s;
+}
+.body{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin:auto;
+    bottom: 0px;
+    width: 120px;
+    height: 115px;
+    background: white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    transition: .3s;
+}
+.left{
+    position: absolute;
+    top: 65px;
+    left: 0;
+    right:165px;
+    margin:auto;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transform: rotateZ(90deg);
+    transition: .3s;
+}
+.right{
+    position: absolute;
+    top: 65px;
+    left: 165px;
+    right:0;
+    margin:auto;
+    bottom: 0;
+    width: 100px;
+    height: 30px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 50px;
+    transform: rotateZ(90deg);
+    transition: .3s;
+}
+
+
+.eye1{
+    animation: eye ease 1.3s infinite;
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 25px;
+    margin:auto;
+    bottom: 150px;
+    width: 15px;
+    height: 10px;
+    background: repeating-linear-gradient(blue 70%,#002966 80%,blue);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .3s;
+}
+.eye2{
+    animation: eye ease-in-out 1.3s infinite;
+    z-index: 111;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    right: 0px;
+    margin:auto;
+    bottom: 150px;
+    width: 15px;
+    height: 10px;
+    background: repeating-linear-gradient(blue 70%,#002966 80%,blue);
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    transition: .3s;
+}
+@keyframes eye{
+    0%{
+        height: 10px;
+    }
+    10%{
+        height: 8px;
+    }
+    20%{
+        height: 6px;
+    }
+    30%{
+        height: 4px;
+    }
+    40%{
+        height: 2px;
+    }
+    50%{
+        height: 0px;
+        }
+     60%{
+        height: 2px;
+        }
+    70%{
+        height: 4px;
+        }
+    80%{
+        height: 6px;
+        }
+     90%{
+        height: 8px;
+        }
+     100%{
+        height: 10px;
+     }
+}
+
+/* Ikkinchi animatsiya */
+input[type="chackbox"]{
+    display: none;
+}
+
+.switch{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    height: 25px;
+    width: 25px;
+    z-index: 1;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px green,inset 0px 0px 15px black;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#switch-botton:checked~label .switch{
+    background:red;
+    box-shadow: 0px 0px 15px red,inset 0px 0px 15px black;
+
+}
+
+#switch-botton:checked~ h2{
+    display:none;
+}
+
+#switch-botton:checked~ .head{
+    bottom: 100px;
+}
+#switch-botton:checked~ .face{
+    bottom: 100px;
+}
+#switch-botton:checked~ .left{
+    left: 20px;
+}
+#switch-botton:checked~ .right{
+    right: 20px;
+}
+#switch-botton:checked~ .eye1{
+    transform: scale(0) translateX(20px);
+}
+#switch-botton:checked~ .eye2{
+    transform: scale(0) translateY(20px);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,17 @@
+.gradient-hover-effect {
+    margin-left: 500px;
+    display: flex;
+    align-items: center;
+    width:200px;
+    padding: 0.875em 2em;
+    background: linear-gradient(90deg, #3f51b5, transparent) #2196f3;
+    font-family: inherit;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 1s;
+    place-content: center;
+  }
+  .gradient-hover-effect:hover, .gradient-hover-effect:focus {
+    background-color: #e91e63;
+    color: #fff;
+  }
